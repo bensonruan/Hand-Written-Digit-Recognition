@@ -1,0 +1,48 @@
+.digit-demo-container {
+  background-color: rgb(158, 220, 228);
+  border-radius: 5px;
+  max-width: 800px;
+  margin: auto;
+ }
+  .digit-demo-container h3 {
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    color: white;
+    margin: 0px;
+}
+
+.flex-two {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.flex-two div {
+  flex: 1;
+  padding: 5px;
+  text-align: center; 
+}
+@media screen and (max-width: 640px) {
+    .flex-two div {
+        padding: 5px; 
+    } 
+}
+
+.canvas-box-wrapper {
+  display: block !important; }
+
+
+#chart_box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px; 
+}
+
+.btn{
+  width: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    #chart_box {
+      padding: 5px; 
+    } 
+}
