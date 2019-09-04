@@ -41,9 +41,9 @@ ctx = canvas.getContext("2d");
 // MOUSE DOWN function
 //---------------------
 $("#canvas").mousedown(function(e) {
-	var mouseX = e.pageX - this.offsetLeft;
-	var mouseY = e.pageY - this.offsetTop;
-
+	var rect = canvas.getBoundingClientRect();
+	var mouseX = e.clientX- rect.left;;
+	var mouseY = e.clientY- rect.top;
 	drawing = true;
 	addUserGesture(mouseX, mouseY);
 	drawOnCanvas();
@@ -74,8 +74,9 @@ canvas.addEventListener("touchstart", function (e) {
 //---------------------
 $("#canvas").mousemove(function(e) {
 	if(drawing) {
-		var mouseX = e.pageX - this.offsetLeft;
-		var mouseY = e.pageY - this.offsetTop;
+		var rect = canvas.getBoundingClientRect();
+		var mouseX = e.clientX- rect.left;;
+		var mouseY = e.clientY- rect.top;
 		addUserGesture(mouseX, mouseY, true);
 		drawOnCanvas();
 	}
