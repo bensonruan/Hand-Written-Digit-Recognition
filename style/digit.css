@@ -40,6 +40,17 @@
   width: 150px;
 }
 
+.coding {
+  background-color: #ffefef !important;
+  font-size: 12px !important;
+  font-family: monospace !important;
+  line-height: 25px;
+  border-radius: 4px !important;
+  padding: 3px 6px !important;
+  color: #d2372a !important;
+  border: 1px solid #fad1d1;
+}
+
 @media screen and (max-width: 767px) {
     #chart_box {
       padding: 5px; 
